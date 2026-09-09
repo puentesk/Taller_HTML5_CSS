@@ -19,13 +19,40 @@
     <main>
         <section id="menu">
             <h2>Nuestro Menu</h2>
+            <ul>
+                <li><a>Arroz con pollo</a></li>
+                <li><a>Arroz con leche</a></li>
+                <li><a>Costillas BBQ</a></li>
+                <li><a>Pechuga a la planca</a></li>
+                <li><a>Jugo de mora</a></li>
+                <li><a>Jugo de maracuya</a></li>
+                <li><a>Gaseosa</a></li>
+            </ul>
         </section>
         <section id="pedidos">
             <h2>Hacer Pedido</h2>
             <p>Elige los platos y realiza tu pedido</p>
+                    
+                <form action="/datos_pedido">
+                    <label>Nombre:</label>
+                    <input type="text" name="Nombre" required>
+
+                    <label>Numero telefonico:</label>
+                    <input type="tel" name="Numero" required>
+
+                    <label>Correo:</label>
+                    <input type="email" name="Correo" required>
+
+                    <label>Pedido:</label>
+                    <input type="textarea" name="Pedido" required>
+
+                    <button type="submit">Enviar pedido</button>
+                </form>
+
         </section>
         <section id="reservas">
             <h2>Reservas</h2>
+            <p>Realiza ya tu reserva</p>
         </section>
         <section id="nosotros">
             <h2>Nosotros</h2>
@@ -33,8 +60,9 @@
         </section>
     </main>
     <footer>
-        <p>Nombres:Kevin Puentes -</p>
+        <p>Nombres:Kevin Puentes - David Ramirez</p>
         <p>&copy; 2026 RESTAURANTE UD. Derechos Reservados</p>
     </footer>
 </body>
+
 </html>
