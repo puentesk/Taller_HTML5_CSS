@@ -52,14 +52,6 @@ body{
     margin: 0;
 }
 
-.card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    border: 1px solid #17365D;
-    padding: var(--space);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
 .btn{
     background-color: var(--color-primary);
     color: #ffffff;
@@ -77,4 +69,19 @@ body{
 .btn:focus {
     outline: 3px solid var(--color-acent);
     outline-offset: 2px;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 280px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #17365D;
+    padding: var(--space);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
