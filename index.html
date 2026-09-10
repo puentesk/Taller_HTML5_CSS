@@ -18,21 +18,22 @@
         </ul>
     </nav>
     <main>
-        <section id="menu">
-            <h2>Nuestro Menu</h2>
-            <ul>
-                <li><a>Arroz con pollo $20000</a></li>
-                <li><a>Arroz con leche $25000</a></li>
-                <li><a>Costillas BBQ $30000</a></li>
-                <li><a>Pechuga a la planca $20000</a></li>
-                <li><a>Jugo de mora $5000</a></li>
-                <li><a>Jugo de maracuya $5000</a></li>
-                <li><a>Gaseosa $6000</a></li>
-            </ul>
-        </section>
-        <section id="pedidos" class="card">
-            <h2>Hacer Pedido</h2>
-            <p>Elige los platos y realiza tu pedido</p>
+        <div class="cards">
+            <section id="menu" class="card">
+                <h2>Nuestro Menu</h2>
+                <ul>
+                    <li><a>Arroz con pollo $20000</a></li>
+                    <li><a>Arroz con leche $25000</a></li>
+                    <li><a>Costillas BBQ $30000</a></li>
+                    <li><a>Pechuga a la planca $20000</a></li>
+                    <li><a>Jugo de mora $5000</a></li>
+                    <li><a>Jugo de maracuya $5000</a></li>
+                    <li><a>Gaseosa $6000</a></li>
+                </ul>
+            </section>
+            <section id="pedidos" class="card">
+                <h2>Hacer Pedido</h2>
+                <p>Elige los platos y realiza tu pedido</p>
                     
                 <form action="/datos_pedido" class="form-grid">
                     <div class="form-group">
@@ -40,39 +41,61 @@
                         <input type="text" name="Nombre" required>
                     </div>
                     <div class="form-group">
-                    <label>Numero telefonico:</label>
-                    <input type="tel" name="Numero" required>
+                        <label>Numero telefonico:</label>
+                        <input type="tel" name="Numero" required>
                     </div>
                     <div class="form-group">
-                    <label>Correo:</label>
-                    <input type="email" name="Correo" required>
+                        <label>Correo:</label>
+                        <input type="email" name="Correo" required>
                     </div>
                     <div class="form-group">
-                    <label>Selecciona tu pedido:</label>
-                    <select name="Pedido" id="pedido" multiple required size="5">
-                        <option value="arroz-pollo">Arroz con pollo</option>
-                        <option value="arroz-leche">Arroz con leche</option>
-                        <option value="costillas">Costillas BBQ</option>
-                        <option value="pechuga">Pechuga a la plancha</option>
-                        <option value="jugo-mora">Jugo de mora</option>
-                        <option value="jugo-maracuya">Jugo de maracuya</option>
-                        <option value="gaseosa">Gaseosa</option>
-                    </select>
+                        <label>Selecciona tu pedido(ctrl para elegir mas de una opcion):</label>
+                        <select name="Pedido" id="pedido" multiple required size="5">
+                            <option value="arroz-pollo">Arroz con pollo</option>
+                            <option value="arroz-leche">Arroz con leche</option>
+                            <option value="costillas">Costillas BBQ</option>
+                            <option value="pechuga">Pechuga a la plancha</option>
+                            <option value="jugo-mora">Jugo de mora</option>
+                            <option value="jugo-maracuya">Jugo de maracuya</option>
+                            <option value="gaseosa">Gaseosa</option>
+                        </select>
                     </div>    
                     <div class="form-group">
-                    <button type="submit" class="btn">Enviar pedido</button>
+                        <button type="submit" class="btn">Enviar pedido</button>
                     </div>
                 </form>
 
-        </section>
-        <section id="reservas">
+            </section>
+        <section id="reservas" class="card">
             <h2>Reservas</h2>
             <p>Realiza ya tu reserva</p>
-        </section>
-        <section id="nosotros">
-            <h2>Nosotros</h2>
-            <p>Somos un restaurante con la mejor calidad y precio</p>
-        </section>
+            <form action="/datos_resrva" class="form-grid">
+                    <div class="form-group">
+                        <label>Nombre:</label>
+                        <input type="text" name="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Numero telefonico:</label>
+                        <input type="tel" name="Numero" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Correo:</label>
+                        <input type="email" name="Correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label>fecha de reserva:</label>
+                        <input type="date" name="Fecha" required>
+                    </div>    
+                    <div class="form-group">
+                        <button type="submit" class="btn">Enviar solicitud de reserva</button>
+                    </div>
+                </form>
+            </section>
+            <section id="nosotros" class="card">
+                <h2>Nosotros</h2>
+                <p>Somos un restaurante con la mejor calidad y precio</p>
+            </section>
+        </div>
     </main>
     <footer>
         <p>Nombres:Kevin Puentes - David Ramirez</p>
