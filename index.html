@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>RESTAURANTE UD</header>
+    
+    <header><h1>RESTAURANTE UD</h1></header>
     <nav>
         <ul>
             <li><a href="#menu">Menu</a></li>
@@ -20,33 +21,47 @@
         <section id="menu">
             <h2>Nuestro Menu</h2>
             <ul>
-                <li><a>Arroz con pollo</a></li>
-                <li><a>Arroz con leche</a></li>
-                <li><a>Costillas BBQ</a></li>
-                <li><a>Pechuga a la planca</a></li>
-                <li><a>Jugo de mora</a></li>
-                <li><a>Jugo de maracuya</a></li>
-                <li><a>Gaseosa</a></li>
+                <li><a>Arroz con pollo $20000</a></li>
+                <li><a>Arroz con leche $25000</a></li>
+                <li><a>Costillas BBQ $30000</a></li>
+                <li><a>Pechuga a la planca $20000</a></li>
+                <li><a>Jugo de mora $5000</a></li>
+                <li><a>Jugo de maracuya $5000</a></li>
+                <li><a>Gaseosa $6000</a></li>
             </ul>
         </section>
-        <section id="pedidos">
+        <section id="pedidos" class="card">
             <h2>Hacer Pedido</h2>
             <p>Elige los platos y realiza tu pedido</p>
                     
-                <form action="/datos_pedido">
-                    <label>Nombre:</label>
-                    <input type="text" name="Nombre" required>
-
+                <form action="/datos_pedido" class="form-grid">
+                    <div class="form-group">
+                        <label>Nombre:</label>
+                        <input type="text" name="Nombre" required>
+                    </div>
+                    <div class="form-group">
                     <label>Numero telefonico:</label>
                     <input type="tel" name="Numero" required>
-
+                    </div>
+                    <div class="form-group">
                     <label>Correo:</label>
                     <input type="email" name="Correo" required>
-
-                    <label>Pedido:</label>
-                    <input type="textarea" name="Pedido" required>
-
-                    <button type="submit">Enviar pedido</button>
+                    </div>
+                    <div class="form-group">
+                    <label>Selecciona tu pedido:</label>
+                    <select name="Pedido" id="pedido" multiple required size="5">
+                        <option value="arroz-pollo">Arroz con pollo</option>
+                        <option value="arroz-leche">Arroz con leche</option>
+                        <option value="costillas">Costillas BBQ</option>
+                        <option value="pechuga">Pechuga a la plancha</option>
+                        <option value="jugo-mora">Jugo de mora</option>
+                        <option value="jugo-maracuya">Jugo de maracuya</option>
+                        <option value="gaseosa">Gaseosa</option>
+                    </select>
+                    </div>    
+                    <div class="form-group">
+                    <button type="submit" class="btn">Enviar pedido</button>
+                    </div>
                 </form>
 
         </section>

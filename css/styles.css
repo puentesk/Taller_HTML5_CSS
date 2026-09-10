@@ -1,0 +1,49 @@
+:root {
+    --color-primary: #17365D;
+    --color-acent: #ed7d31;
+    --color-bg: #F7F8FA;
+    --color-text: #1F2937;
+    --space: 1rem; 
+}
+
+* { box-sizing: border-box;}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin: 1rem 0;
+}
+
+body{
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    margin: 0;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #17365D;
+    padding: var(--space);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.btn{
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: var(--color-acent);
+}
+
+.btn:focus {
+    outline: 3px solid var(--color-acent);
+    outline-offset: 2px;
+}
