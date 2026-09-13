@@ -1,12 +1,12 @@
 # Taller HTML5 + CSS 
  
 ## Objetivo 
-Describe brevemente qué construiste. 
+Se construyo una pagina de un restaurante usando HTML y CSS en donde el cliente puede ver el menu, Ordenar y hacer reservas en el restaurante a traves de formularios
  
 ## Variante asignada 
-Contexto: ... 
-Restricción visual: ... 
-Requisito técnico: ... 
+Contexto: Restaurante
+Restricción visual: Diseño orientado a producto 
+Requisito técnico: Formulario accesible
  
 ## Tecnologías 
 HTML5, CSS3, Git y GitHub. 

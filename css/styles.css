@@ -1,6 +1,6 @@
 :root {
     --color-primary: #17365D;
-    --color-acent: #ed7d31;
+    --color-acent: #ED7d31;
     --color-bg: #F7F8FA;
     --color-text: #1F2937;
     --space: 1rem; 
@@ -84,4 +84,31 @@ body{
     border: 1px solid #17365D;
     padding: var(--space);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+}
+
+nav a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--color-acent);
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
 }
