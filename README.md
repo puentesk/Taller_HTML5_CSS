@@ -15,7 +15,8 @@ HTML5, CSS3, Git y GitHub.
 Abrir index.html en un navegador. 
  
 ## Decisiones de diseño 
-Explica 3 decisiones que hayas tomado y por qué. 
+*Decidimos Hacer los formularios organizados
+*Decidimos darle un formato 380px en moviles para mejor vista en los mismos
  
 ## Uso de IA 
 Resumen del apoyo recibido y enlace/ubicación de evidencias/ia/registro_ia.md. 
